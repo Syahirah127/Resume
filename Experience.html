@@ -50,14 +50,52 @@ body {font-size:14px;}
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:5px" id="My Biodata">
-    <h1 class="w3-jumbo"><b>Experiences</b></h1>
+    <h1 class="w3-jumbo"><marquee behavior="alternate"><b>Experiences</b></marquee></h1>
   </div>
   
   <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
+ <div class="w3-row-padding">
     <div class="w3-half">
-      <img src="images/bunga.jpg" style="width:50%" onclick="onClick(this)" alt="This is me"> 
-     
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 70%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 70%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+</style>
+
+<div class="container">
+  <img src="images/cv.jpeg" alt="Avatar" class="image">
+  <div class="overlay">Hello, I'm Intan Syahirah</div>
+</div>
     </div>
 
   <!-- Modal for full size images on click-->
@@ -122,7 +160,7 @@ div.b {
 
 <div class="b w3-container" id="Work Experiences" style="margin-top:75px" align="justify">
   <font size="4">
-   While working, I have absorbed a lot of new skills and knowledge, which makes me more courageous to try something new. Working in the field of dealing with clients makes the way I communicate with people better day by day. My confidence is also growing because the job of a promoter and customer service is to always convince customers of good things. Because I easily adapt to new environments, I am now an increasingly focused person with dreams and goals for the jobs and assignments I face.
+   While working, I have absorbed a lot of new skills and knowledge, which makes me more courageous to try something new. Working in the field of dealing with clients makes the way I communicate with people better day by day. My confidence is also growing because the job of a promoter and customer service is to always convince customers of good things. Because I easily adapt to new environments, I am now an increasingly focused person with dreams and goals for the jobs and tasks I face.
    </font>
   </div>
 

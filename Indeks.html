@@ -57,8 +57,46 @@ body {font-size:14px;}
   <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
     <div class="w3-half">
-      <img src="images/bunga.jpg" style="width:50%" onclick="onClick(this)" alt="This is me"> 
-     
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 70%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 70%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+</style>
+
+<div class="container">
+  <img src="images/cv.jpeg" alt="Avatar" class="image">
+  <div class="overlay">Hello, I'm Intan Syahirah</div>
+</div>
     </div>
 
   <!-- Modal for full size images on click-->
@@ -74,6 +112,7 @@ body {font-size:14px;}
   <div class="w3-container" id="About" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-brown"><b>About me.</b></h1>
     <hr style="width:50px;border:5px solid black" class="w3-round">
+    <br>
     <font size="4"><p>Full Name: Intan Syahirah binti Ramli</p>
     <p>Age: 22 Years Old</p>
     <p>Gender: Female</p>
@@ -139,8 +178,32 @@ body {font-size:14px;}
         <label>Message</label>
         <input class="w3-input w3-border" type="text" name="Message" required>
       </div>
-      <button type="Inform Me" class="w3-button w3-block w3-padding-large w3-black w3-margin-bottom"><p><a href="syahirahhramli127@gmail.com"><a href="mailto:syahirahhramli127@gmail.com">Inform Me Now</a></p></button>
-    </form></font>  
+
+<style>
+.button {
+  background-color: #4d4d4d; /* Grey */
+  border: none;
+  color: white;
+  padding: 18px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+</style>
+</button>
+<p align="center"><button class="button button2">
+<a href="mailto:syahirahhramli127@gmail.com" target="_blank">Inform me now</a></button></p>
+
+  </form></font>  
   </div>
   
 <!-- End page content -->

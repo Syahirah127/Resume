@@ -22,7 +22,7 @@ body {font-size:14px;}
     <h3 class="w3-padding-61"><b>Intan<br>Syahirah</b></h3>
   </div></font>
   <div class="w3-bar-block">
-   <a href="indeks.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="indeks.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
     <a href="Summary.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Summary</a> 
     <a href="Experience.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Experiences</a> 
     <a href="objektif.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Objectives</a> 
@@ -50,19 +50,57 @@ body {font-size:14px;}
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:4px" id="References">
-    <h1 class="w3-jumbo"><b>References</b></h1>
+    <h1 class="w3-jumbo"><marquee behavior="alternate"><b>References</b></marquee></h1>
     </div>
   
   <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
+ <div class="w3-row-padding">
     <div class="w3-half">
-      <img src="images/bunga.jpg" style="width:50%" onclick="onClick(this)" alt="This is me"> 
-     
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 70%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 70%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+</style>
+
+<div class="container">
+  <img src="images/cv.jpeg" alt="Avatar" class="image">
+  <div class="overlay">Hello, I'm Intan Syahirah</div>
+</div>
     </div>
 
   <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-brown" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-brown w3-xxxlarge w3-display-topright">×</span>
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-red w3-xxxlarge w3-display-topright">×</span>
     <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
       <img id="img01" class="w3-image">
       <p id="caption"></p>
@@ -70,11 +108,10 @@ body {font-size:14px;}
   </div>
 
   <!-- References -->
-  <div class="w3-container" id="References" style="margin-top:85px">
-    <h1 class="w3-xxxlarge w3-text-brown"><b> For References.</b></h1>
-    <hr style="width:50px;border:5px solid black" class="w3-round">
-    <font size="4">
-  <br><ol type="1">
+  <div class="w3-container" id="References" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-brown"><b>For References.</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round"><font size="4">
+    <br><ol type="1">
      <li>En Mohd Fikri bin Ismail
       <p>Assistant Store Manager of Parkson Kuantan City Mall</p>
       <p>+60129664637</p></li>
@@ -85,8 +122,10 @@ body {font-size:14px;}
       <p>012-8088040</p>
       <p>mohdzafian.weebly.com</p>
   </li>
-    </div>
-     
+    
+  </div>
+  
+
 <!-- End page content -->
 </div>
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title><marquee>Welcome to Intan Syahirah Website</marquee></title>
+<title>Welcome to Intan Syahirah Website</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -49,15 +49,53 @@ body {font-size:14px;}
 </audio>
 
   <!-- Header -->
-  <div class="w3-container" style="margin-top:4px" id="About me">
-    <h1 class="w3-jumbo"><b>Summary</b></h1>
+  <div class="w3-container" style="margin-top:4px" id="Summary">
+    <h1 class="w3-jumbo"><marquee behavior="alternate"><b>Summary</b></marquee></h1>
   </div>
   
   <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
+ <div class="w3-row-padding">
     <div class="w3-half">
-      <img src="images/bunga.jpg" style="width:50%" onclick="onClick(this)" alt="This is me"> 
-     
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 70%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 70%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+</style>
+
+<div class="container">
+  <img src="images/cv.jpeg" alt="Avatar" class="image">
+  <div class="overlay">Hello, I'm Intan Syahirah</div>
+</div>
     </div>
 
   <!-- Modal for full size images on click-->
@@ -73,6 +111,7 @@ body {font-size:14px;}
   <div class="w3-container w3-padding-60" id="summary" style="margin-top:75px" align="justify"><font size="4">
     <h1 class="w3-xxxlarge w3-text-brown"><b> My Summary.</b></h1>
     <hr style="width:50px;border:5px solid black" class="w3-round">
+    <br>
     <p>University students who have high ambitions and dreams, as well as abilities in the fields of web development and information technology, I am experienced in building websites and repairing small parts of internal and external computer components. I am excited about working in the field of web development technology as a successful web developer by gaining experience in the real world.</p>
     <p>Easily adapt to learning new things by constantly exploring something that is rare and different from others that is innovative in nature.eager to help entrepreneurs and businesses in need of services in terms of technological design. Being confident can help everyone to be bold in trying something new.
     </p>

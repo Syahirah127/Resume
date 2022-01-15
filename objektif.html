@@ -49,15 +49,53 @@ body {font-size:14px;}
 </audio>
 
   <!-- Header -->
-  <div class="w3-container" style="margin-top:4px" id="My Biodata">
-    <h1 class="w3-jumbo"><b>Objectives</b></h1>
+  <div class="w3-container" style="margin-top:4px" id="My Objective">
+    <h1 class="w3-jumbo"><marquee behavior="alternate"><b>Objectives</b></marquee></h1>
     </div>
   
   <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
+ <div class="w3-row-padding">
     <div class="w3-half">
-      <img src="images/bunga.jpg" style="width:50%" onclick="onClick(this)" alt="This is me"> 
-     
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 70%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 70%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+</style>
+
+<div class="container">
+  <img src="images/cv.jpeg" alt="Avatar" class="image">
+  <div class="overlay">Hello, I'm Intan Syahirah</div>
+</div>
     </div>
 
   <!-- Modal for full size images on click-->

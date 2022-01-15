@@ -48,14 +48,13 @@ body {font-size:14px;}
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:4px" id="Education">
-    <h1 class="w3-jumbo"><b>Education</b></h1>
+    <h1 class="w3-jumbo"><marquee behavior="alternate"><b>Education</b></marquee></h1>
   </div>
   
   <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
     <div class="w3-half">
-      <img src="images/bunga.jpg" style="width:50%" onclick="onClick(this)" alt="This is me"> 
-     
+      <img src="images/cv.jpeg" style="width:35%" alt="Concrete meets bricks">
     </div>
 
   <!-- Modal for full size images on click-->
@@ -73,6 +72,41 @@ body {font-size:14px;}
     <h1 class="w3-xxxlarge w3-text-brown"><b>My Educational Background.</h1></b>
     <hr style="width:50px;border:5px solid black" class="w3-round">
     <br>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 24.33%;
+  padding: 3px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+<body>
+
+<div class="row">
+  <div class="column">
+    <img src="images/logo sklh3.png" alt="Elementary School" style="width:65%">
+  </div>
+  <div class="column">
+    <img src="images/logo smkph.png" alt="Secondary School" style="width:52%">
+  </div>
+  <div class="column">
+    <img src="images/logo smka.png" alt="High School" style="width:60%">
+  </div>
+  <div class="column">
+    <img src="images/logo uitm 2.png" alt="University" style="width:50%">
+  </div>
+</div>
+<br>
 <style>
 table {
   border-collapse: collapse;
@@ -101,7 +135,7 @@ th {
   </tr>
   <tr>
     <td>UPSR</td>
-    <td>Sk(LKTP)Lepar Hilir 3</td>
+    <td>SK(LKTP)Lepar Hilir 3</td>
     <td>2006-2012</td>
   </tr>
   <tr>
